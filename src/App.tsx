@@ -1,11 +1,13 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import DynamicStatus from "./component/DynamicStatusIndicator";
 import FluidMenu from "./component/FluidMenu";
+import TodoApp from "./component/TodoApp";
 
 function Home() {
   const components = [
     { name: "Dynamic Status Indicator", path: "/dynamic-status" },
     { name: "Fluid Menu", path: "/fluid-menu" },
+    { name: "Animated checkbox", path: "/animated-checkbox" },
   ];
 
   return (
@@ -32,6 +34,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/dynamic-status" element={<DynamicStatus />} />
         <Route path="/fluid-menu" element={<FluidMenu />} />
+        <Route path="/animated-checkbox" element={<TodoApp />} />
       </Routes>
     </Router>
   );
