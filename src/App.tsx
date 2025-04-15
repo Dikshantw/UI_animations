@@ -2,12 +2,14 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import DynamicStatus from "./component/DynamicStatusIndicator";
 import FluidMenu from "./component/FluidMenu";
 import TodoApp from "./component/TodoApp";
+import AnimatedToggle from "./component/PricingToggle";
 
 function Home() {
   const components = [
     { name: "Dynamic Status Indicator", path: "/dynamic-status" },
     { name: "Fluid Menu", path: "/fluid-menu" },
     { name: "Animated checkbox", path: "/animated-checkbox" },
+    { name: "Animated Toggle", path: "/animated-toggle" },
   ];
 
   return (
@@ -35,6 +37,7 @@ function App() {
         <Route path="/dynamic-status" element={<DynamicStatus />} />
         <Route path="/fluid-menu" element={<FluidMenu />} />
         <Route path="/animated-checkbox" element={<TodoApp />} />
+        <Route path="/animated-toggle" element={<AnimatedToggle />} />
       </Routes>
     </Router>
   );
