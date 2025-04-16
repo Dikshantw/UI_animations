@@ -3,6 +3,7 @@ import DynamicStatus from "./component/DynamicStatusIndicator";
 import FluidMenu from "./component/FluidMenu";
 import TodoApp from "./component/TodoApp";
 import AnimatedToggle from "./component/PricingToggle";
+import LayoutApp from "./component/SharedLayoutTabs";
 
 function Home() {
   const components = [
@@ -10,6 +11,7 @@ function Home() {
     { name: "Fluid Menu", path: "/fluid-menu" },
     { name: "Animated checkbox", path: "/animated-checkbox" },
     { name: "Animated Toggle", path: "/animated-toggle" },
+    { name: "Shared Layout Tabs", path: "/shared-layout-tabs" },
   ];
 
   return (
@@ -38,6 +40,7 @@ function App() {
         <Route path="/fluid-menu" element={<FluidMenu />} />
         <Route path="/animated-checkbox" element={<TodoApp />} />
         <Route path="/animated-toggle" element={<AnimatedToggle />} />
+        <Route path="/shared-layout-tabs" element={<LayoutApp />} />
       </Routes>
     </Router>
   );
